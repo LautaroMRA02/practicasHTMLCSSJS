@@ -21,22 +21,45 @@
     'navbar main main  '
     'footer footer footer ';
     grid-template-columns: 180px auto;
-    grid-template-rows: 60px 1fr 70px;
+    grid-template-rows: 50px 1fr 70px;
 }
 
 .header
 {
+    background-color: rgb(9, 8, 8);
 
 }
 .navbar
 {
-
+ background-color: rgb(22, 20, 20);
 }
 .main
 {
 background-color: slategrey;
+overflow-y: scroll;
+
 }
+.main::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    /* Ocultar scroll */
+}
+.main::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+.main::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.main::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+
+
 .foo
 {
+    background-color: rgb(9, 8, 8);
 
 }
