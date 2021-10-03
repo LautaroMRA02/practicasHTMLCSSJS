@@ -5,7 +5,7 @@ iconoMenu.addEventListener('click', (e) => {
 
     menu.classList.toggle('active');
     document.body.classList.toggle('opacity');
-
+    iconoMenu.classList.toggle('imgActive');
 
     const rutaActual = e.target.getAttribute('src');
 
