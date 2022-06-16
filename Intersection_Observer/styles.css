@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.cards{
+    background-color: white;
+    border: 1px solid gray;
+    padding: .5rem;
+    border-radius: .25rem;
+    transform: translateX(200px);
+    opacity: 0;
+    transition: 150ms;
+}
+
+.show{
+    transform: translateX(0);
+    opacity: 1;
+}
